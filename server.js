@@ -273,11 +273,8 @@ app.delete('/api/survivors/:id', (req, res) => {
     message: `Survivor ${survivor.name} deleted`,
     survivor: survivor
   });
-});
-
-// ==========================================
+})
 // Start Server
-// ==========================================
 const PORT = 3001;
 app.listen(PORT, () => {
   console.log(`
